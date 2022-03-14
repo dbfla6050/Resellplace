@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.pyr.mapper.CartMapper">
+
+	<insert id="detailCart">
+		insert into cart(uuid,pName,price,quantity,id)
+		values(#{uuid},#{pName},#{price},#{quantity},#{id})
+	</insert>
+
+	
+	<select id="cartList" resultType="org.pyr.domain.CartDTO">
+		select c.cno, c.uuid, c.pname, c.price, c.quantity, c.id, 
+		concat(replace(p.uploadpath,'\\','/'),'/s_',p.uuid,'_',p.filename) filename,
+		c.price * c.quantity as total
+		from cart as c
+		left join product as p
+		on c.uuid=p.uuid
+		where id=#{id};
+	</select>
+	
+	<update id="cartupdate">
+		update cart
+		set quantity=#{quantity}
+		where cno=#{cno}
+	</update>
+	
+	<delete id="cartRemove">
+		delete from cart
+		where cno=#{cno}
+	</delete>
+
+
+
+
+</mapper>

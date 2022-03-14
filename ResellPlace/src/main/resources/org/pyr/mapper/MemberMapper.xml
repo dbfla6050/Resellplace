@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.pyr.mapper.MemberMapper">
+
+	<insert id="insert">
+		insert into member1
+		values(#{id},#{password},#{name},#{email},#{phone})
+	</insert>
+	
+	<select id="login" resultType="org.pyr.domain.MemberDTO">
+		select * from member1
+		where id=#{id}
+		and password=#{password}
+	</select>
+
+
+
+</mapper>

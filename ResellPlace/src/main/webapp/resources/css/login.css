@@ -1,0 +1,333 @@
+@charset "utf-8";
+
+/* 전체 리셋 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(66, 66, 66);
+}
+
+ul,ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#wrap{
+    width: 100%;
+    min-width: 1300px;
+}
+
+.header{
+    height: 120px;
+}
+
+
+.headerIn{
+    width: 1300px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.logo a{
+    display: block;
+    width: 150px;
+    height: 80px;
+    background-image: url(/resources/img/logo.png);
+    background-size: 150px auto;
+    text-indent: -99999px;
+}
+
+.gnb{
+    margin-left: -270px;
+}
+
+.gnb ul{
+    display: flex;
+}
+
+.gnb li{
+    margin-left: 80px;
+}
+
+.gnb li a{
+    font-size: 17px;
+    color: #333;
+    font-weight: 500;
+}
+
+.member ul{
+    display: flex;
+}
+
+.member li{
+    margin-left: 20px;
+}
+
+.member li a{
+    font-size: 14px;
+    color: #333;
+}
+
+.member .sc1 a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/resources/img/icon_search.png);
+    text-indent: -99999px;
+}
+
+.member .sc2 a{
+    display: block;
+    width: 25px;
+    height: 20px;
+    background-image: url(/resources/img/icon_cart.png);
+    text-indent: -99999px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+
+#container{
+    width: 100%;
+    background: url(/resources/img/login.jpeg)top no-repeat;
+    height: 100vh;
+    background-size: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    /* padding-bottom: 40px; */
+}
+
+#loginBox{
+    width: 500px;
+    height: auto;
+    margin: 50px auto;
+}
+
+#box{
+    width: 420px;
+    height: 150px;
+    margin-top: 15px;
+    background-color: #fff;
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 40px;
+    border: 1px #fff solid;
+}
+
+.subTxt1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.subTxt1 a{
+    font-size: 12px;
+    color: #111;
+}
+
+#idCheck{
+    position: relative;
+    top: 30px;
+}
+
+#idCheck, span{
+    margin-bottom: 10px;
+}
+
+#box p:nth-child(2) span{
+    margin-left: 20px;
+}
+
+.subTxt1 a:hover{
+    font-weight: bold;
+}
+
+#id{
+    margin-bottom: 15px;
+}
+
+#id p{
+    position: relative;
+}
+
+#idCheck{
+    position: absolute;
+    left: 0;
+}
+
+
+
+button{
+    width: 500px;
+    color: #fff;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: #a39489;
+    opacity: 0.9;
+    border-radius: 5px;
+    border: 1px #a39489 solid;
+}
+
+button:hover{
+    background-color: #74665b;
+    border: 1px #74665b solid;
+}
+
+#inputBox{
+    width: 400px;
+    height: 28px;
+    font-size: 14px;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px #74665b solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+
+#footer{
+    background-color: #74665b;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.footerIn{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.f_logo{
+    width: 180px;
+    height: 100px;
+    background-image: url(/resources/img/flogo.png);
+    background-size: 180px auto;
+    text-indent: -99999px;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+.f_box{
+    margin-right: 100px;
+}
+
+.f_menu{
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.f_menu ul{
+    display: flex;
+}
+
+.f_menu li{
+    margin-right: 5px;
+}
+
+.f_menu li a{
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #ddd;
+    padding: 3px 15px;
+    font-size: 15px;
+}
+
+.f_info{
+    margin-bottom: 25px;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.f_info span{
+    margin-right: 13px;
+}
+
+.copyright{
+    color: #ddd;
+    font-weight: 300;
+}
+
+.fkg .kg1{
+    margin-bottom: 15px;
+}
+
+.fkg .kg2{
+    margin-bottom: 15px;
+    color: #ddd;
+    font-size: 12px;
+}
+
+.fkg .kg3 a{
+    color: #ddd;
+}
+
+.fkg .kg3 span{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 6px;
+    margin-left: 5px;
+}

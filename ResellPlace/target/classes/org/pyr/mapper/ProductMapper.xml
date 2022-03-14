@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.pyr.mapper.ProductMapper">
+
+	<insert id="regist">
+		insert into product(uuid,fileName,uploadPath,brand,pName,price,productType)
+		values(#{uuid},#{fileName},#{uploadPath},#{brand},#{pName},#{price},#{productType})
+	</insert>
+
+	<select id="fileList" resultType="org.pyr.domain.ProductDTO">
+		select brand,pname,price,productDate,uuid,concat(replace(uploadpath,'\\','/'),'/s_',uuid,'_',filename) filename
+		from product
+		order by productDate desc
+	</select>
+	
+	<select id="pdetail" resultType="org.pyr.domain.ProductDTO">
+		select brand,pname,price,uuid,concat(replace(uploadpath,'\\','/'),'/s_',uuid,'_',filename) filename
+		from product
+		where uuid=#{uuid}
+	</select>
+
+	<select id="mainBList" resultType="org.pyr.domain.ProductDTO">
+		select brand,pname,price,productDate,uuid,concat(replace(uploadpath,'\\','/'),'/s_',uuid,'_',filename) filename
+		from product
+		where productType='b'
+		order by productDate desc
+		limit 4
+	</select>
+	
+	<select id="mainNList" resultType="org.pyr.domain.ProductDTO">
+		select brand,pname,price,productDate,uuid,concat(replace(uploadpath,'\\','/'),'/s_',uuid,'_',filename) filename
+		from product
+		where productType='n'
+		order by productDate desc
+		limit 4
+	</select>
+	
+	<select id="bestList" resultType="org.pyr.domain.ProductDTO">
+		select brand,pname,price,productDate,uuid,concat(replace(uploadpath,'\\','//'),'/s_',uuid,'_',filename) filename
+		from product
+		where productType='b'
+		order by productDate desc
+	</select>
+	
+	<select id="newList" resultType="org.pyr.domain.ProductDTO">
+		select brand,pname,price,productDate,uuid,concat(replace(uploadpath,'\\','//'),'/s_',uuid,'_',filename) filename
+		from product
+		where productType='n'
+		order by productDate desc
+	</select>
+
+
+
+</mapper>

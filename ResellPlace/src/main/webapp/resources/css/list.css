@@ -1,0 +1,378 @@
+@charset "utf-8";
+
+/* 전체 리셋 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(66, 66, 66);
+}
+
+ul,ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#wrap{
+    width: 100%;
+    min-width: 1300px;
+}
+
+.header{
+    height: 120px;
+}
+
+
+.headerIn{
+    width: 1300px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.logo a{
+    display: block;
+    width: 150px;
+    height: 80px;
+    background-image: url(/resources/img/logo.png);
+    background-size: 150px auto;
+    text-indent: -99999px;
+}
+
+.gnb{
+    margin-left: -270px;
+}
+
+.gnb ul{
+    display: flex;
+}
+
+.gnb li{
+    margin-left: 80px;
+}
+
+.gnb li a{
+    font-size: 17px;
+    color: #333;
+    font-weight: 500;
+}
+
+.member ul{
+    display: flex;
+}
+
+.member li{
+    margin-left: 20px;
+}
+
+.member li a{
+    font-size: 14px;
+    color: #333;
+}
+
+.member .sc1 a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/resources/img/icon_search.png);
+    text-indent: -99999px;
+}
+
+.member .sc2 a{
+    display: block;
+    width: 25px;
+    height: 20px;
+    background-image: url(/resources/img/icon_cart.png);
+    text-indent: -99999px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container{
+    position: relative;
+}
+
+.mainslide{
+    position: relative;
+    height: 450px;
+}
+
+.slide-img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -650px;
+    width: 1300px;
+    height: 380px;
+    background-image: url(/resources/img/slide.jpg);
+    /* background-size: 1300px auto; */
+    text-indent: -999999px;
+    opacity: 0.9;
+}
+
+.msname{
+    position: absolute;
+    top: 170px;
+    left: 40%;
+    color: #fff;
+    font-size: 53px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.board{
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    margin-bottom: 80px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    /* background-color: blueviolet; */
+}
+
+h2{
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #444;
+    /* background-color: aqua; */
+    line-height: 25px;
+
+}
+
+table{
+    width: 1100px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+th{
+    background-color: #74665b;
+    color: #fff;
+    font-weight: 400;
+}
+
+th, td{
+    padding: 13px 0;
+    border-bottom: 1px dotted #bbb;
+}
+
+td a{
+    color: #444;
+}
+
+.write{
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.write a{
+    display: inline-block;
+    font-size: 15px;
+    color: #555;
+    font-weight: 500;
+    padding: 5px 15px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+}
+
+.paging{
+	display: flex;
+	justify-content: center;
+	margin-bottom:30px;
+}
+
+.paging li{
+	margin: 0 4px;
+}
+
+.paging li a{
+	color: #555;
+	text-align: center;
+	font-size: 15px;
+}
+
+.search{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+label{
+    margin-right: 10px;
+}
+
+.s-text{
+    padding: 5px;
+}
+
+.button{
+    padding: 6px 25px;
+    background-color: #74665b;
+    color: #fff;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    background-color: #74665b;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.footerIn{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.f_logo{
+    width: 180px;
+    height: 100px;
+    background-image: url(/resources/img/flogo.png);
+    background-size: 180px auto;
+    text-indent: -99999px;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+.f_box{
+    margin-right: 100px;
+}
+
+.f_menu{
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.f_menu ul{
+    display: flex;
+}
+
+.f_menu li{
+    margin-right: 5px;
+}
+
+.f_menu li a{
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #ddd;
+    padding: 3px 15px;
+    font-size: 15px;
+}
+
+.f_info{
+    margin-bottom: 25px;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.f_info span{
+    margin-right: 13px;
+}
+
+.copyright{
+    color: #ddd;
+    font-weight: 300;
+}
+
+.fkg .kg1{
+    margin-bottom: 15px;
+}
+
+.fkg .kg2{
+    margin-bottom: 15px;
+    color: #ddd;
+    font-size: 12px;
+}
+
+.fkg .kg3 a{
+    color: #ddd;
+}
+
+.fkg .kg3 span{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+
