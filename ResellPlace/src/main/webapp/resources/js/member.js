@@ -20,7 +20,7 @@ $(document).ready(function(){
 	})
 	
 	
-	//아이디 유효성검사
+	//아이디
 	$("#id").change(function(){
 		if($("#id").val().length < 8 || $("#id").val().length > 12){
 		    alert("아이디의 길이를 8자 이상 12자 이하로 만들어 주세요.");
@@ -32,11 +32,11 @@ $(document).ready(function(){
 	})
 	
 	
-	//비밀번호 유효성검사
+	//비밀번호 
 	$("#pass").change(function(){
 		if($("#pass").val().length < 8 || $("#pass").val().length > 12){
 		    alert("비밀번호를 8자 이상 12자 이하로 만들어 주세요.");
-			//$("#idMsg").html("아이디의 길이를 8자 이상 12자 이하로 만들어 주세요.") ;
+			//$("#idMsg").html("비밀번호의 길이를 8자 이상 12자 이하로 만들어 주세요.") ;
 			//$("#idMsg").css("color","red");
 			$("#pass").focus();
 			$("#pass").select();

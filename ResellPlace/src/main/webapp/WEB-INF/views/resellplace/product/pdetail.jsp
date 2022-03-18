@@ -14,7 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="/resources/css/product2.css">
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="/resources/js/product.js"></script>
 	
 	<!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />

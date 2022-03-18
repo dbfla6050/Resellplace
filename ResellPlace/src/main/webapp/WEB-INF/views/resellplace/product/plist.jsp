@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/resources/css/plist.css">
 	
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="/resources/js/plist.js"></script>
 </head>
 <body>
 	<%@ include file="../header.jsp" %>
